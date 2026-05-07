@@ -1,0 +1,14 @@
+# Raw Chess Data
+data/
+*.pgn
+*.zip
+
+dataset/
+*.npy
+*.pgn
+
+saved_models/
+*.pth
+
+__pycache__/
+*.pyc
