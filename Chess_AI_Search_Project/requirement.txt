@@ -1,0 +1,16 @@
+Chess_AI_Search/
+│
+├── requirements.txt   # File chứa các thư viện cần cài đặt và hướng dẫn chạy
+├── evaluation.py      # File chứa Hàm lượng giá (Piece-Square Tables)
+├── engine.py          # File chứa Thuật toán Minimax + Alpha-Beta
+└── main.py            # File chạy game để test ở Terminal
+
+
+/////////////////////////////////////////////////////////////////////////////
+
+* install python-chess : 
+pip install chess
+
+
+* Run the program: 
+python main.py 
