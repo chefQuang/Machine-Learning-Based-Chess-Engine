@@ -30,11 +30,13 @@ def load_images():
     try:
         for piece in pieces:
             # Load and scale images to fit the squares perfectly
-            img = pygame.image.load(os.path.join('assets', f'{piece}.png'))
+            img = pygame.image.load(os.path.join('images', f'{piece}.png'))
             IMAGES[piece] = pygame.transform.smoothscale(img, (SQUARE_SIZE, SQUARE_SIZE))
+
+            
     except FileNotFoundError:
-        print("WARNING: Could not find piece images in the 'assets' folder.")
-        print("Please ensure you have wP.png, bP.png, etc., saved in an 'assets' directory.")
+        print("WARNING: Could not find piece images in the 'images' folder.")
+        print("Please ensure you have wP.png, bP.png, etc., saved in an 'images' directory.")
         sys.exit()
 
 # --- STATISTICS TRACKER ---
